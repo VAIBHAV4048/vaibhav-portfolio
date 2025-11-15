@@ -1,81 +1,76 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-Website</title>
+    <title>Document</title>
+    <link rel="icon" href="images\headerImg.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Vaibhav Pant Component's Library</h1>
-    <p>
-      This is my component library which will help m to make all my projects
-      good and consistent
-    </p>
-    <hr />
-    <h2>@Typography</h2>
-    <h1>This is the biggest Heading</h1>
-    <h2>This is the Second Biggest Heading</h2>
-    <p>This is how the normal text would look like</p>
-    <small>This is relatively small text</small>
-    <hr />
-    <h2>@container</h2>
-    <h3>fluid container</h3>
-    <p>This is a fluid container and this will go till the end of the page</p>
-    <h3>center container</h3>
-    <p>THis is a centered container and it will go till the specified width</p>
-    <hr />
-    <hr />
-    <h2>@links</h2>
-    <a href="/">Primeary Link</a>
-    <a href="/">Secondary Link</a>
-    <hr />
-    <h2>@lists</h2>
-    <h3>unordered lists</h3>
-    <ul>
-      <li>Item One</li>
-      <li>Item Two</li>
-      <li>Item Three</li>
-    </ul>
-    <h3>unordered inline list</h3>
-    <ul>
-      <li>Inline Item One</li>
-      <li>Inline Item Two</li>
-      <li>Inline Item Three</li>
-    </ul>
-    <h3>reverse ordered list</h3>
-    <ol>
-      <li>Milk</li>
-      <li>Egg</li>
-      <li>Bread</li>
-    </ol>
-    <hr />
-    <h2>@nav</h2>
-    <p>I am Brand</p>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Products</a></li>
-        <li><a href="/">About</a></li>
+    <!-- navbar -->
+    <nav class="navigation container">
+      <p class="nav-brand">IMDEVELOPER</p>
+      <ul class="nav-pills">
+        <li class="list-item-inline">
+          <a class="lin link-active" href="/">Home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="lin" href="Projects.html">Projects</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="lin" href="Blogs.html">Skills</a>
+        </li>
       </ul>
     </nav>
-    <hr />
-    <h2>@header</h2>
-    <img src="images\header-img.svg" alt="Header Image" />
-    <h1>this is heading h1 inside header</h1>
-    <hr>
-    <h2>@section</h2>
-    <p>A section is used to seperate parts of pages. In marketing websites you would have seen a header followed by sections of features,team pricing ,contact info etc.</p>
- <section>
-    <h2>@normal section</h2>
+    <!-- Hero Section -->
+    <header class="hero">
+      <img class="hero-img" src="images/headerImg.svg" alt="Header Image" />
+      <h1 class="hero-heading">
+        Hi I'm
+        <span class="hero-heading hero-heading-highlighted">Vaibhav</span>
+      </h1>
+    </header>
+    <!-- skills section -->
+    <section class="section ow">
+      <div class="cotainer container-section"></div>
+      <h2>Skills</h2>
+      <p class="p-size">
+        I'm skilled in Figma ,HTML5,CSS,Javascript,Tailwind,Git,Web Hoisting
+      </p>
     </section>
-    <hr>
-    <h2>@footer</h2>
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>Social One</li>
-             <li>Social Two</li>
-              <li>Social Three</li>
-        </ul>
+    <!-- projects section -->
+    <section class="section">
+      <div class="cotainer container-section"></div>
+      <h2>Projects</h2>
+      <p class="p-size">
+        I like to showcase my work and thus ,you can seemy projects hoisted
+        online
+      </p>
+      <a class="link primary-link" href="/">See Here</a>
+    </section>
+    <!-- blogs section -->
+    <section class="section ow">
+      <div class="cotainer container-section"></div>
+      <h2>Blogs</h2>
+      <p class="p-size">
+        I like to document my journey in the meantime while working on technical
+        and non-technical skills. It feels great to share what i do.
+      </p>
+      <a class="link secondary-link" href="/">My Blogs</a>
+    </section>
+    <footer class="footer">
+      <div class="footer-header">Social Media Handles</div>
+      <ul class="social-links">
+        <li class="list-item-inline"><a class="link" href="/">Github</a></li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/vaibhav-pant-841665299"
+            >Linkedin</a
+          >
+        </li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
